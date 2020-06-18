@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Contact Us </title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css')}}>
+</head>
+  <meta charset="UTC-8">
+	<body>
+		<div class="container">
+        <header>
+        
+   
+        <div class="clear"></div>
+        </header>
+        <div id=wekcomediv>
+        <form id="contact_form" name="contact_form" method="post" action="." >
+           <fieldset>
+            <legend>Register</legend>
+               <table>
+                 <tr>
+                     <td><label for="Name">Name</label></td>
+                     <td><input type="text" name="user" id="Name" placeholder="Enter name" autofocus="autofocus"/></td>
+                   </tr>
+                    <tr>
+                     <td><label for="Email">Email</label></td>
+                      <td><input type="email" name="email" id="Email" placeholder="Enter Email Address"/></td>
+                   </tr>
+                    <tr> 
+                        <td><label for="Password">Password</label></td>
+                        <td><input type="password" name="pass" placeholder="Enter your password"/></td>
+                   </tr>
+                    <tr> 
+                        <td><label for="Password">Confirm</label></td>
+                        <td><input type="password" name=" pass" placeholder="Re-enter your password"/></td>
+                   </tr>
+                   
+                    <tr>
+                      <td><input type="reset" name="Reset" id="Reset" value="Reset"/></td>
+                      <td><input type="submit" name="Send" id="Send" value="Submit"/></td>    
+                   </tr>
+               </table>
+            </fieldset>
+        </form>
+        </div>    
+        </div>
+    </body>
+
+</html>
+

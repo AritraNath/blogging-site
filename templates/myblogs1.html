@@ -1,0 +1,25 @@
+<html>
+<body>
+<p>
+Welcome To Blog
+</p>
+<br/>
+<button onclick="location.href='http://127.0.0.1:5000/createblog/'"type="button">
+Write Blog</button>
+<br/>
+{% for b in myblog_list %}
+<tr>
+<td>{{b['username']}}</td></br>
+<td>{{b['title']}}</td></br>
+<td>{{b['content']}}</td></br>
+<form method="post" action="." >
+       <input type="hidden" name="blog_id" value="{{b.get('_id')}}">
+       <Button type="submit" name="action" value="delete">Delete</Button>
+       <Button type="submit" name="action" value="update">Update</Button>
+</form>
+</br>
+</tr>
+{% endfor %}
+</body>
+
+</html>
